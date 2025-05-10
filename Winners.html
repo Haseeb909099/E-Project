@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobel Prize Winners</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/winners.css">
+    
+</head>
+<body>
+    <header>
+    <div class="header-container">
+        <div class="logo"> 
+            <a href="index.html"> 
+                <img src="./images/logo.png" id="logo"> 
+            </a> 
+            <p id="abn">AllAbtNobel</p> 
+        </div>
+        
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a href="winners.html">Laureates</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="winners.html">Winners</a></li>
+                        <li><a href="nominees.html">Nominees</a></li>
+                    </ul>
+                </li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="news and events.html">News & Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="login-btn"><a href="login.html">Login</a></li>
+            </ul>
+            
+        </nav>
+        
+        <div class="overlay"></div>
+    </div>
+</header>
+    
+    <div class="heading-container">
+        <h1>Nobel Prize Winners</h1>
+    </div>
+   
+    <div class="modal" id="winnerModal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <img id="modalImage" class="modal-image" src="" alt="Winner Image">
+            <div class="modal-text">
+                <h2 id="modalName"></h2>
+                <p id="modalDescription"></p>
+                <button class="download-btn" id="downloadPdfBtn">Download PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 id="physics">Physics</h2>
+        <div class="cards-container" id="physics-cards-container"></div>
+    </div>
+
+    <div class="container">
+        <h2 id="chemistry">Chemistry</h2>
+        <div class="cards-container" id="chemistry-cards-container"></div>
+    </div>
+
+    <div class="container">
+        <h2 id="medicine">Physiology or Medicine</h2>
+        <div class="cards-container" id="medicine-cards-container"></div>
+    </div>
+
+    <div class="container">
+        <h2 id="literature">Literature</h2>
+        <div class="cards-container" id="literature-cards-container"></div>
+    </div>
+
+    <div class="container">
+        <h2 id="peace">Peace</h2>
+        <div class="cards-container" id="peace-cards-container"></div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" alt="AllAbtNobel Logo">
+                    <span>AllAbtNobel</span>
+                </div>
+                <p>Your comprehensive resource exploring the history, laureates, and impact of the world's most prestigious awards.</p>
+                <div class="social-links">
+                    <a target="_blank" href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="alfred.html">The Founder</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="history.html">History</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="nps1.html">How & When Nobel Prize Started</a></li>
+                    <li><a href="Winners.html">Winners</a></li>
+                    <li><a href="nominees.html">Nominiees</a></li>
+                    <li><a href="fields.html">Fields</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="news and events.html">News and Events</a></li>
+                    <li><a href="Sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                © 2023 AllAbtNobel. Not affiliated with the Nobel Foundation. All content used under fair use for educational purposes.
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        const winnersData = {
+            physics: [
+                {
+                    name: "Albert Einstein",
+                    image: "./images/Albert.jpg",
+                    description: "Albert Einstein was awarded the Nobel Prize in Physics in 1921 (presented in 1922) for his explanation of the photoelectric effect, which demonstrated that light interacts with matter as discrete packets of energy (quanta). This work was pivotal in the development of quantum mechanics. Einstein's broader contributions, including the theory of relativity and the famous equation E=mc², revolutionized modern physics and our understanding of space, time, and energy."
+                },
+                {
+                    name: "Niels Bohr",
+                    image: "./images/niels bohr.jpg",
+                    description: "Niels Bohr received the Nobel Prize in Physics in 1922 for his groundbreaking work on atomic structure and quantum theory. His Bohr model of the atom, which introduced quantized energy levels for electrons, laid the foundation for modern atomic physics. Bohr's work on the interaction of light with atoms, including the Bohr effect in biochemistry, significantly advanced our understanding of atomic and molecular behavior."
+                },
+                {
+                    name: "Max Planck",
+                    image: "./images/Max planck.jpg",
+                    description: "Max Planck won the Nobel Prize in Physics in 1918 for his discovery of energy quanta, which introduced the concept that energy is emitted or absorbed in discrete packets. His work on black-body radiation and the Planck constant formed the cornerstone of quantum mechanics, fundamentally altering our understanding of physical processes at the atomic scale and influencing countless scientific advancements."
+                },
+                {
+                    name: "Richard P. Feynman",
+                    image: "./images/richard.png",
+                    description: "Richard P. Feynman was awarded the Nobel Prize in Physics in 1965 for his contributions to quantum electrodynamics (QED), which describes how light and matter interact. His development of Feynman diagrams and the Feynman–Leibniz formula simplified complex calculations in particle physics. Feynman's engaging teaching and popular science books, like 'Surely You're Joking, Mr. Feynman!', made him a beloved figure in science."
+                },
+                {
+                    name: "Marie Curie",
+                    image: "./images/marie curie.webp",
+                    description: "Marie Curie won the Nobel Prize in Physics in 1903, shared with her husband Pierre Curie and Henri Becquerel, for their pioneering research on radioactivity. As the first woman to receive a Nobel Prize, her work on spontaneous radiation laid the groundwork for modern nuclear physics and medical applications, including cancer treatments. Curie's dedication to science under challenging conditions remains inspirational."
+                },
+                {
+                    name: "Peter Higgs",
+                    image: "./images/Peter-Higgs.webp",
+                    description: "Peter Higgs received the Nobel Prize in Physics in 2013, shared with François Englert, for the theoretical prediction of the Higgs boson, a particle that explains the origin of mass in the universe. Their work on the Higgs mechanism, proposed in the 1960s, was confirmed by the particle's discovery at CERN in 2012, completing a critical piece of the Standard Model of particle physics."
+                }
+            ],
+            chemistry: [
+                {
+                    name: "Marie Curie",
+                    image: "./images/marie curie.webp",
+                    description: "Marie Curie was awarded the Nobel Prize in Chemistry in 1911 for her discovery of the elements radium and polonium, and her extensive research on radioactivity. Her meticulous isolation of these elements from pitchblende and her studies on their chemical properties advanced the field of chemistry and opened new avenues for medical research, particularly in radiology."
+                },
+                {
+                    name: "Ahmed Zewail",
+                    image: "./images/ahmed zewail.jpg",
+                    description: "Ahmed Zewail won the Nobel Prize in Chemistry in 1999 for his pioneering work in femtochemistry, which uses ultrafast laser techniques to observe chemical reactions on the timescale of femtoseconds. His ability to capture the motion of atoms during reactions provided unprecedented insights into molecular dynamics, revolutionizing the study of chemical processes."
+                },
+                {
+                    name: "Dorothy Hodgkin",
+                    image: "./images/dorothy hodgkin.jpg",
+                    description: "Dorothy Hodgkin received the Nobel Prize in Chemistry in 1964 for her development of X-ray crystallography techniques to determine the structures of complex biochemical molecules, including penicillin and vitamin B12. Her work enabled significant advances in biochemistry and medicine, and as one of the few women Nobel laureates in science, she inspired generations of researchers."
+                },
+                {
+                    name: "Robert H. Grubbs",
+                    image: "./images/robert%20grubbs.webp",
+                    description: "Robert H. Grubbs won the Nobel Prize in Chemistry in 2005, shared with Yves Chauvin and Richard R. Schrock, for developing the metathesis method in organic synthesis. This catalytic process allows for the efficient rearrangement of carbon-carbon bonds, transforming the synthesis of pharmaceuticals, plastics, and other materials with wide industrial applications."
+                },
+                {
+                    name: "Benjamin List",
+                    image: "./images/benjamin list.jpg",
+                    description: "Benjamin List was awarded the Nobel Prize in Chemistry in 2021, shared with David W.C. MacMillan, for developing asymmetric organocatalysis. This innovative approach uses small organic molecules as catalysts to produce chiral molecules with high precision, significantly impacting pharmaceutical development and green chemistry by offering efficient, environmentally friendly synthesis methods."
+                },
+                {
+                    name: "Emmanuelle Charpentier & Jennifer Doudna",
+                    image: "./images/Emmanuelle Charpentier & Jennifer Doudna.png",
+                    description: "Emmanuelle Charpentier and Jennifer Doudna won the Nobel Prize in Chemistry in 2020 for their development of CRISPR-Cas9, a precise gene-editing technology. By harnessing a bacterial defense mechanism, they created a tool to edit DNA with unprecedented accuracy, revolutionizing genetic research, agriculture, and medicine, with potential to treat genetic disorders."
+                },
+                
+                
+            ],
+            medicine: [
+                {
+                    name: "Alexander Fleming",
+                    image: "./images/Alexander Fleming.webp",
+                    description: "Alexander Fleming was awarded the Nobel Prize in Physiology or Medicine in 1945, shared with Ernst Chain and Howard Florey, for the discovery of penicillin, the first antibiotic. His observation of mold inhibiting bacterial growth transformed medicine, enabling the treatment of bacterial infections and saving countless lives during and after World War II."
+                },
+                {
+                    name: "James Watson & Francis Crick",
+                    image: "./images/James Watson & Francis Crick.jpg",
+                    description: "James Watson and Francis Crick, along with Maurice Wilkins, received the Nobel Prize in Physiology or Medicine in 1962 for discovering the double helix structure of DNA. Their model, based on X-ray diffraction data, revealed how genetic information is stored and replicated, laying the foundation for molecular biology and genomics."
+                },
+                {
+                    name: "Tu Youyou",
+                    image: "./images/Tu youyou.jpg",
+                    description: "Tu Youyou won the Nobel Prize in Physiology or Medicine in 2015 for her discovery of artemisinin, a highly effective antimalarial drug. Inspired by traditional Chinese medicine, her work led to a treatment that has saved millions of lives, particularly in developing countries, demonstrating the value of integrating traditional and modern scientific approaches."
+                },
+                {
+                    name: "Harvey J. Alter, Michael Houghton & Charles M. Rice",
+                    image: "./images/Harvey J. Alter, Michael Houghton & Charles M. Rice.jpeg",
+                    description: "Harvey J. Alter, Michael Houghton, and Charles M. Rice were jointly awarded the Nobel Prize in Physiology or Medicine in 2020 for their discovery of the Hepatitis C virus. Their work identified the cause of chronic hepatitis, enabling diagnostic tests and treatments that have prevented millions of deaths from liver disease and cancer."
+                },
+                {
+                    name: "Svante Pääbo",
+                    image: "./images/Svante Pääbo.jpg",
+                    description: "Svante Pääbo received the Nobel Prize in Physiology or Medicine in 2022 for his pioneering research on the genomes of extinct hominins, including Neanderthals and Denisovans. His work revealed genetic contributions to modern humans and advanced our understanding of human evolution, bridging anthropology and molecular biology."
+                },
+                {
+                     name: "Elizabeth Blackburn",
+                     image: "./images/elizabeth_blackburn.jpg",
+                     description: "Elizabeth Blackburn was awarded the Nobel Prize in Physiology or Medicine in 2009 (shared with Carol Greider and Jack Szostak) for the discovery of how chromosomes are protected by telomeres and the enzyme telomerase. Their work revealed fundamental mechanisms in cellular aging and has profound implications for cancer research and understanding age-related diseases."
+                },
+                
+            ],
+            literature: [
+                {
+                    name: "Rabindranath Tagore",
+                    image: "./images/Rabindranath Tagore.jpg",
+                    description: "Rabindranath Tagore won the Nobel Prize in Literature in 1913, the first non-European laureate, for his collection of poems, Gitanjali, celebrated for its lyrical beauty and spiritual depth. A prolific poet, novelist, and playwright, Tagore's works reshaped Bengali literature and influenced global literary thought, promoting universal human values."
+                },
+                {
+                    name: "Gabriel García Márquez",
+                    image: "./images/Gabriel García Márquez.jpg",
+                    description: "Gabriel García Márquez was awarded the Nobel Prize in Literature in 1982 for his novels and short stories, which blend magical realism with historical and social themes. Works like *One Hundred Years of Solitude* created a vivid, imaginative world, influencing Latin American literature and earning him global acclaim."
+                },
+                {
+                    name: "Ernest Hemingway",
+                    image: "./images/Ernest Hemingway.jpeg",
+                    description: "Ernest Hemingway received the Nobel Prize in Literature in 1954 for his concise, powerful narrative style, exemplified in *The Old Man and the Sea*. His works, including *A Farewell to Arms* and *For Whom the Bell Tolls*, explore themes of courage, loss, and human struggle, shaping modern American literature."
+                },
+                {
+                    name: "Toni Morrison",
+                    image: "./images/Toni Morrison.jpeg",
+                    description: "Toni Morrison won the Nobel Prize in Literature in 1993 for her novels that blend poetic prose with deep explorations of African American identity and history. Works like *Beloved* and *Song of Solomon* offer profound insights into race, gender, and humanity, cementing her legacy as a literary giant."
+                },
+                {
+                    name: "Kazuo Ishiguro",
+                    image: "./images/Kazuo Ishiguro.jpg",
+                    description: "Kazuo Ishiguro received the Nobel Prize in Literature in 2017 for his emotionally resonant novels, such as *The Remains of the Day* and *Never Let Me Go*. His subtle storytelling explores memory, identity, and the human condition, earning him recognition as one of the most distinctive voices in contemporary literature."
+                },
+                {
+                    name: "Bob Dylan",
+                    image: "./images/Bob Dylan.jpg",
+                    description: "Bob Dylan was awarded the Nobel Prize in Literature in 2016 for creating new poetic expressions within the American song tradition. His lyrics, in songs like *Blowin' in the Wind* and *Like a Rolling Stone*, combine social commentary with poetic artistry, influencing music and literature across generations."
+                }
+            ],
+            peace: [
+                {
+                    name: "Mother Teresa",
+                    image: "./images/Mother Teresa.jpg",
+                    description: "Mother Teresa received the Nobel Peace Prize in 1979 for her humanitarian work with the Missionaries of Charity in Calcutta, India. Her selfless dedication to serving the poorest of the poor, including orphans and the sick, inspired global efforts to alleviate suffering and promote dignity for all."
+                },
+                {
+                    name: "Malala Yousafzai",
+                    image: "./images/malala.jpg",
+                    description: "Malala Yousafzai was awarded the Nobel Peace Prize in 2014, at age 17, for her courageous advocacy for girls' education in Pakistan, despite surviving an assassination attempt by the Taliban. Her global activism through the Malala Fund continues to champion education rights, making her a symbol of resilience and hope."
+                },
+                {
+                    name: "Martin Luther King Jr.",
+                    image: "./images/martin luther king jr..jpg",
+                    description: "Martin Luther King Jr. won the Nobel Peace Prize in 1964 for his nonviolent leadership in the American Civil Rights Movement. His iconic *I Have a Dream* speech and tireless fight against racial segregation and inequality inspired global movements for justice and equality, leaving a lasting legacy."
+                },
+                {
+                    name: "Nelson Mandela",
+                    image: "./images/Nelson Mandela.webp",
+                    description: "Nelson Mandela received the Nobel Peace Prize in 1993, shared with F.W. de Klerk, for their efforts to dismantle apartheid in South Africa and establish a democratic, multiracial government. Mandela's 27 years in prison and subsequent leadership as South Africa's first Black president exemplified reconciliation and unity."
+                },
+                {
+                    name: "Barack Obama",
+                    image: "./images/barack obama.jpg",
+                    description: "Barack Obama was awarded the Nobel Peace Prize in 2009 for his efforts to strengthen international diplomacy and promote global cooperation. As U.S. President, his initiatives on nuclear disarmament, climate change, and multilateral engagement aimed to foster peace and address global challenges, sparking both praise and debate."
+                },
+                {
+                    name: "International Campaign to Ban Landmines (ICBL)",
+                    image: "./images/International Campaign to Ban Landmines (ICBL).webp",
+                    description: "The International Campaign to Ban Landmines (ICBL) received the Nobel Peace Prize in 1997 for its global advocacy to ban anti-personnel landmines. Led by Jody Williams, the ICBL's efforts led to the Ottawa Treaty, signed by over 160 countries, saving countless lives by reducing the threat of landmines."
+                }
+            ]
+        };
+
+        function generateCards(containerId, winners) {
+            const container = document.getElementById(containerId);
+            if (!container) {
+                console.error(`Container with ID ${containerId} not found`);
+                return;
+            }
+            winners.forEach((winner) => {
+                if (!winner.name || !winner.description || !winner.image) {
+                    console.warn(`Incomplete data for winner: ${JSON.stringify(winner)}`);
+                    return;
+                }
+                const card = document.createElement("div");
+                card.classList.add("card");
+                card.innerHTML = `
+                    <img src="${winner.image}" alt="${winner.name}" loading="lazy">
+                    <h2>${winner.name}</h2>
+                    <p>${winner.description.slice(0, 100)}...</p>
+                    <button class="show-more-btn">Show More</button>
+                `;
+                card.style.animation = 'fadeIn 0.5s ease-out';
+                card.addEventListener('animationend', () => {
+                    card.style.animation = 'none';
+                });
+                const showMoreBtn = card.querySelector('.show-more-btn');
+                showMoreBtn.addEventListener('click', () => showModal(winner));
+                container.appendChild(card);
+            });
+        }
+
+        function showModal(winner) {
+            const modal = document.getElementById('winnerModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalName = document.getElementById('modalName');
+            const modalDescription = document.getElementById('modalDescription');
+            const downloadBtn = document.getElementById('downloadPdfBtn');
+
+            if (!modal || !modalImage || !modalName || !modalDescription || !downloadBtn) {
+                console.error('Modal elements not found');
+                return;
+            }
+
+            modalImage.src = winner.image || '';
+            modalImage.alt = winner.name || 'No image available';
+            modalName.textContent = winner.name || 'Unknown Winner';
+            modalDescription.textContent = winner.description || 'No description available.';
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+            downloadBtn.onclick = () => generatePDF(winner);
+        }
+
+        function generatePDF(winner) {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            const pageWidth = 210; // A4 width in mm
+            const pageHeight = 297; // A4 height in mm
+            const margin = 20;
+            const maxWidth = pageWidth - 2 * margin;
+            const lineHeight = 7;
+
+            // Page 1: Title and Image
+            doc.setFont("times", "bold");
+            doc.setFontSize(20);
+            doc.text(winner.name || 'Unknown Winner', margin, 20);
+
+            const img = new Image();
+            img.crossOrigin = "Anonymous";
+            img.src = winner.image;
+            img.onload = () => {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = img.width;
+                canvas.height = img.height;
+                ctx.drawImage(img, 0, 0);
+
+                const imgData = canvas.toDataURL('image/jpeg');
+                const imgProps = doc.getImageProperties(imgData);
+                const pdfWidth = maxWidth;
+                const imgHeight = (imgProps.height * pdfWidth) / imgProps.width;
+                const imgY = 30;
+                doc.addImage(imgData, 'JPEG', margin, imgY, pdfWidth, imgHeight);
+
+                // Add description
+                doc.setFont("times", "normal");
+                doc.setFontSize(12);
+                const splitText = doc.splitTextToSize(winner.description || 'No description available.', maxWidth);
+                let currentY = imgY + imgHeight + 10;
+                let linesOnPage1 = Math.floor((pageHeight - currentY - margin) / lineHeight);
+                if (linesOnPage1 < 0) linesOnPage1 = 0;
+
+                if (linesOnPage1 > 0 && splitText.length > 0) {
+                    const textForPage1 = splitText.slice(0, linesOnPage1);
+                    doc.text(textForPage1, margin, currentY);
+                }
+
+                // Page 2: Remaining Description
+                if (splitText.length > linesOnPage1) {
+                    doc.addPage();
+                    currentY = margin;
+                    doc.setFont("times", "bold");
+                    doc.setFontSize(20);
+                    doc.text(winner.name || 'Unknown Winner', margin, currentY);
+                    currentY += 10;
+                    doc.setFont("times", "normal");
+                    doc.setFontSize(12);
+                    const textForPage2 = splitText.slice(linesOnPage1);
+                    doc.text(textForPage2, margin, currentY);
+                }
+
+                doc.save(`${(winner.name || 'unknown').replace(/[^a-zA-Z0-9]/g, '_')}_Nobel_Prize.pdf`);
+            };
+            img.onerror = () => {
+                doc.setFont("times", "normal");
+                doc.setFontSize(12);
+                const splitText = doc.splitTextToSize(winner.description || 'No description available.', maxWidth);
+                doc.text(splitText.slice(0, Math.floor(splitText.length / 2)), margin, 30);
+                doc.addPage();
+                doc.setFont("times", "bold");
+                doc.setFontSize(20);
+                doc.text(winner.name || 'Unknown Winner', margin, 20);
+                doc.setFont("times", "normal");
+                doc.setFontSize(12);
+                doc.text(splitText.slice(Math.floor(splitText.length / 2)), margin, 30);
+                doc.save(`${(winner.name || 'unknown').replace(/[^a-zA-Z0-9]/g, '_')}_Nobel_Prize.pdf`);
+            };
+        }
+
+        try {
+            generateCards("physics-cards-container", winnersData.physics);
+            generateCards("chemistry-cards-container", winnersData.chemistry);
+            generateCards("medicine-cards-container", winnersData.medicine);
+            generateCards("literature-cards-container", winnersData.literature);
+            generateCards("peace-cards-container", winnersData.peace);
+        } catch (error) {
+            console.error('Error generating cards:', error);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav');
+            const overlay = document.querySelector('.overlay');
+            const modal = document.getElementById('winnerModal');
+            const closeBtn = document.querySelector('.close-btn');
+
+            if (!menuToggle || !nav || !overlay || !modal || !closeBtn) {
+                console.error('One or more DOM elements not found');
+                return;
+            }
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                nav.classList.toggle('active');
+                overlay.classList.toggle('active');
+                document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+            });
+
+            overlay.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+
+            document.querySelectorAll('nav ul li a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menuToggle.classList.remove('active');
+                    nav.classList.remove('active');
+                    overlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            document.querySelectorAll('nav a[href*="#"]').forEach(anchor => {
+                anchor.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = anchor.getAttribute('href').split('#')[1];
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            closeBtn.addEventListener('click', () => {
+                modal.classList.remove('show');
+                document.body.style.overflow = '';
+            });
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('show');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="icon" href="./images/nobelfavicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>AllAbtNobel | Celebrating Human Achievement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+
+</head>
+<body>
+    <header>
+    <div class="header-container">
+        <div class="logo"> 
+            <a href="index.html"> 
+                <img src="./images/logo.png" id="logo"> 
+            </a> 
+            <p id="abn">AllAbtNobel</p> 
+        </div>
+        
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a href="winners.html">Laureates</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="winners.html">Winners</a></li>
+                        <li><a href="nominees.html">Nominees</a></li>
+                    </ul>
+                </li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="news and events.html">News & Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="login-btn"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="overlay"></div>
+    </div>
+</header>
+    
+    <!-- Split Landing Section -->
+    <section class="landing">
+        <div class="laureate-carousel">
+            <!-- Carousel Slides -->
+            <div class="carousel-slide active" style="background-image: url('images/Abiy\ Ahmed.jpg')">
+                <div class="carousel-caption">
+                    <h3>Nobel Peace Prize 2019</h3>
+                    <p>Abiy Ahmed Ali receiving the medal for his efforts to achieve peace with Eritrea</p>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('images/Marie\ Curie.jpg')">
+                <div class="carousel-caption">
+                    <h3>Marie Curie</h3>
+                    <p>The first woman to win a Nobel Prize and the only person to win in two sciences</p>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('images/Bob\ Dylan.jpg')">
+                <div class="carousel-caption">
+                    <h3>Bob Dylan</h3>
+                    <p>2016 Literature Laureate for creating new poetic expressions in American song tradition</p>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('images/Youyou.jpg')">
+                <div class="carousel-caption">
+                    <h3>Tu Youyou</h3>
+                    <p>2015 Medicine Laureate for her discovery of artemisinin to treat malaria</p>
+                </div>
+            </div>
+            
+            <!-- Carousel Navigation Dots -->
+            <div class="carousel-nav">
+                <div class="carousel-dot active" onclick="goToSlide(0)"></div>
+                <div class="carousel-dot" onclick="goToSlide(1)"></div>
+                <div class="carousel-dot" onclick="goToSlide(2)"></div>
+                <div class="carousel-dot" onclick="goToSlide(3)"></div>
+            </div>
+        </div>
+        
+        <div class="medal-display">
+            <div class="medal-content">
+                <h1>The Highest Honor</h1>
+                <p>Bestowed upon those who confer the greatest benefit to humankind in physics, chemistry, medicine, literature, peace, and economic sciences.</p>
+                <div class="medal-quote">
+                    "For the greatest benefit to humankind"<br>
+                    — Alfred Nobel's Will
+                </div>
+                <a href="history.html#legacy" class="medal-link"><b>Discover the Legacy</b></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Laureate of the Day Spotlight -->
+    <section class="spotlight">
+        <div class="spotlight-container">
+            <div class="spotlight-image">
+                <img src="images/malala.jpg" alt="Malala Yousafzai">
+            </div>
+            <div class="spotlight-content">
+                <div class="spotlight-header">
+                    <span class="spotlight-year">2014</span>
+                    <span class="spotlight-category">Peace Prize Laureate</span>
+                </div>
+                <h2>Malala Yousafzai</h2>
+                <p class="spotlight-quote">
+                    "One child, one teacher, one book, one pen can change the world."
+                </p>
+                <div class="spotlight-bio">
+                    <p>The youngest-ever Nobel Prize laureate, Malala was awarded for her struggle against the suppression of children and young people and for the right of all children to education.</p>
+                    <p>At age 15, she survived an assassination attempt by the Taliban for her advocacy of girls' education in Pakistan's Swat Valley.</p>
+                </div>
+                <a href="winners.html" class="spotlight-link">Explore All Laureates <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+   
+    
+    <!-- Quick Links Section -->
+    <section class="quick-links">
+        <div class="quick-links-container">
+            <h2>Explore the Nobel Legacy</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="images/Alfred Nobel.jpeg" alt="Alfred Nobel">
+                    <div class="card-content">
+                        <h3>The Founder</h3>
+                        <p>Discover the fascinating life of Alfred Nobel, the inventor, scientist, and philanthropist who established the prizes.</p>
+                        <a href="alfred.html">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/divisions2.jpeg" alt="Chemistry Prize" id="divisions">
+                    <div class="card-content">
+                        <h3>Prize Categories</h3>
+                        <p>Explore the six fields of achievement recognized by the Nobel Prize and their evolution.</p>
+                        <a href="fields.html">View Categories <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/ceremony.jpeg" alt="Medicine Prize">
+                    <div class="card-content">
+                        <h3>How & When Nobel Prize Award Started</h3>
+                        <p>Understand how laureates are chosen through a rigorous nomination and selection process.</p>
+                        <a href="nps1.html">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Fun Facts Section -->
+    <section class="fun-facts">
+        <div class="fun-facts-container">
+            <h2 id="trivia">Nobel Trivia</h2>
+            <div class="fact-box">
+                <p class="fact-text" id="current-fact">The Nobel Prize medal for Physics, Chemistry, Medicine, and Literature features Alfred Nobel's profile with the inscription: "Inventas vitam juvat excoluisse per artes" ("And they who bettered life on earth by new found mastery")</p>
+                <div class="fact-nav">
+                    <button onclick="prevFact()"><i class="fas fa-chevron-left"></i> Previous</button>
+                    <button onclick="nextFact()">Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" alt="AllAbtNobel Logo">
+                    <span>AllAbtNobel</span>
+                </div>
+                <p>Your comprehensive resource exploring the history, laureates, and impact of the world's most prestigious awards.</p>
+                <div class="social-links">
+                    <a target="_blank" href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="alfred.html">The Founder</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="history.html">History</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="nps1.html">How & When Nobel Prize Started</a></li>
+                    <li><a href="Winners.html">Winners</a></li>
+                    <li><a href="nominees.html">Nominiees</a></li>
+                    <li><a href="fields.html">Fields</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="news and events.html">News and Events</a></li>
+                    <li><a href="Sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                © 2023 AllAbtNobel. Not affiliated with the Nobel Foundation. All content used under fair use for educational purposes.
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </footer>
+
+    <script>
+        // Mobile Menu Functionality
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        const overlay = document.querySelector('.overlay');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+            overlay.classList.toggle('active');
+            
+            // Toggle body scroll when menu is open
+            if (nav.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+        
+        overlay.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            nav.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        // Carousel Functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+        
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+        
+        function goToSlide(n) {
+            showSlide(n);
+        }
+        
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+        
+        // Auto-advance carousel every 5 seconds
+        setInterval(nextSlide, 5000);
+        
+        // Initialize carousel
+        showSlide(0);
+        
+        // Fun Facts Data
+        const facts = [
+            "The Nobel Prize medal for Physics, Chemistry, Medicine, and Literature features Alfred Nobel's profile with the inscription: 'Inventas vitam juvat excoluisse per artes' ('And they who bettered life on earth by new found mastery')",
+            "Between 1901 and 2022, the Nobel Prizes were awarded 615 times to 989 people and organizations, with some receiving it more than once.",
+            "The Nobel Peace Prize medal is the only one that features a different design, showing three naked men forming a fraternal bond.",
+            "In 1968, Sveriges Riksbank (Sweden's central bank) established the Prize in Economic Sciences in Memory of Alfred Nobel, which is not technically a Nobel Prize.",
+            "Four Nobel laureates were forced by authorities to decline the award: Adolf Hitler forbade three Germans from accepting it, and Boris Pasternak was coerced by Soviet authorities.",
+            "The Nobel Prize amount for 2023 was set at 11 million Swedish kronor (about $1 million USD) per full prize."
+        ];
+        
+        let currentFactIndex = 0;
+        const factElement = document.getElementById('current-fact');
+        
+        // Display initial fact
+        factElement.textContent = facts[currentFactIndex];
+        
+        // Navigation functions
+        function nextFact() {
+            currentFactIndex = (currentFactIndex + 1) % facts.length;
+            factElement.textContent = facts[currentFactIndex];
+        }
+        
+        function prevFact() {
+            currentFactIndex = (currentFactIndex - 1 + facts.length) % facts.length;
+            factElement.textContent = facts[currentFactIndex];
+        }
+        
+        // Auto-rotate facts every 8 seconds
+        setInterval(nextFact, 8000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="icon" href="./images/nobelfavicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Nobel Prize Nominations | AllAbtNobel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/nominees.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="header-container">
+            <div class="logo"> 
+                <a href="index.html"> 
+                    <img src="./images/logo.png" id="logo"> 
+                </a> 
+                <p id="abn">AllAbtNobel</p> 
+            </div>
+            
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="dropdown">
+                        <a href="winners.html">Laureates</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="winners.html">Winners</a></li>
+                            <li><a href="nominees.html">Nominees</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="news and events.html">News & Events</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="login-btn"><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <div class="overlay"></div>
+        </div>
+    </header>
+    
+    <!-- Header -->
+    <div class="nomination-header">
+        <div class="container">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png" alt="Nobel Prize Logo" class="nomination-logo">
+            <h1 class="nomination-title">Nobel Prize Nominations</h1>
+            <p class="subtitle">Recognizing outstanding contributions to humanity since 1901</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="intro">
+            <h2>Nominate a Candidate for the Nobel Prize</h2>
+            <p>The Nobel Prize is awarded annually to individuals and organizations who have made outstanding contributions in the fields of Physics, Chemistry, Physiology or Medicine, Literature, Peace, and Economic Sciences.</p>
+            <p>Nominations can be submitted by qualified nominators, including university professors, scientists, members of national assemblies and governments, and previous Nobel Prize laureates.</p>
+            <p>The nomination period is from September to January each year. All nominations are confidential and remain sealed for 50 years.</p>
+        </section>
+
+        <section class="categories">
+            <div class="category-card" onclick="showDescription('physics')">
+                <div class="category-icon">⚛️</div>
+                <h3 class="category-title">Physics</h3>
+                <p>Awarded for outstanding contributions in the field of physics.</p>
+            </div>
+            <div class="category-card" onclick="showDescription('chemistry')">
+                <div class="category-icon">🧪</div>
+                <h3 class="category-title">Chemistry</h3>
+                <p>Recognizing exceptional achievements in chemical research.</p>
+            </div>
+            <div class="category-card" onclick="showDescription('medicine')">
+                <div class="category-icon">🏥</div>
+                <h3 class="category-title">Medicine</h3>
+                <p>For significant discoveries in physiology or medicine.</p>
+            </div>
+            <div class="category-card" onclick="showDescription('literature')">
+                <div class="category-icon">📚</div>
+                <h3 class="category-title">Literature</h3>
+                <p>Awarded for outstanding literary work of idealistic tendency.</p>
+            </div>
+            <div class="category-card" onclick="showDescription('peace')">
+                <div class="category-icon">🕊️</div>
+                <h3 class="category-title">Peace</h3>
+                <p>For the promotion of peace and brotherhood among nations.</p>
+            </div>
+            <div class="category-card" onclick="showDescription('economics')">
+                <div class="category-icon">💹</div>
+                <h3 class="category-title">Economic Sciences</h3>
+                <p>For exceptional contributions to economic science.</p>
+            </div>
+        </section>
+
+        <!-- Physics Description -->
+        <section id="physics-description" class="category-description">
+            <div class="description-header">
+                <div class="description-icon">⚛️</div>
+                <div>
+                    <h2>Nobel Prize in Physics</h2>
+                    <p>The most prestigious award in physics, recognizing groundbreaking contributions to our understanding of the universe.</p>
+                </div>
+            </div>
+            
+            <h3>Nomination Criteria</h3>
+            <p>The Nobel Prize in Physics is awarded to those who have made the most outstanding contributions in the field of physics. Nominations should demonstrate:</p>
+            <ul class="criteria-list">
+                <li><strong>Discovery or invention:</strong> A fundamental breakthrough in physical theory or the invention of revolutionary instrumentation</li>
+                <li><strong>Impact:</strong> The work should have significantly advanced our understanding of physical phenomena</li>
+                <li><strong>Originality:</strong> The contribution should represent a substantial leap rather than incremental progress</li>
+                <li><strong>Verification:</strong> The discovery should be experimentally verified when possible</li>
+                <li><strong>Timeliness:</strong> While there's no strict time limit, recent work is generally favored</li>
+            </ul>
+            
+            <h3>Eligible Fields</h3>
+            <p>The Physics Prize encompasses all branches of physics, including but not limited to:</p>
+            <ul class="criteria-list">
+                <li>Theoretical physics (quantum mechanics, relativity, particle physics)</li>
+                <li>Experimental physics (condensed matter, nuclear, atomic physics)</li>
+                <li>Astrophysics and cosmology</li>
+                <li>Applied physics with fundamental implications</li>
+                <li>Interdisciplinary work with physics at its core</li>
+            </ul>
+            
+            <h3>Nomination Requirements</h3>
+            <p>A complete nomination for the Physics Prize should include:</p>
+            <ul class="criteria-list">
+                <li>Detailed description of the discovery or invention</li>
+                <li>Evidence of its impact on the field</li>
+                <li>Supporting publications and citations</li>
+                <li>Independent verification when applicable</li>
+                <li>Comparison with previous work in the field</li>
+            </ul>
+            
+            <div class="notable-laureates">
+                <h3>Notable Physics Laureates</h3>
+                <p>Recent winners include:</p>
+                <ul class="criteria-list">
+                    <li><strong>2022:</strong> Alain Aspect, John F. Clauser, and Anton Zeilinger for experiments with entangled photons</li>
+                    <li><strong>2021:</strong> Syukuro Manabe, Klaus Hasselmann, and Giorgio Parisi for climate models and complex systems</li>
+                    <li><strong>2020:</strong> Roger Penrose, Reinhard Genzel, and Andrea Ghez for black hole discoveries</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Chemistry Description -->
+        <section id="chemistry-description" class="category-description">
+            <div class="description-header">
+                <div class="description-icon">🧪</div>
+                <div>
+                    <h2>Nobel Prize in Chemistry</h2>
+                    <p>Awarded for groundbreaking discoveries that have expanded our understanding of chemical phenomena and their applications.</p>
+                </div>
+            </div>
+            
+            <h3>Nomination Criteria</h3>
+            <p>The Nobel Prize in Chemistry recognizes exceptional contributions to the chemical sciences. Nominations should demonstrate:</p>
+            <ul class="criteria-list">
+                <li><strong>Scientific importance:</strong> The work should represent a major advance in chemical knowledge</li>
+                <li><strong>Innovation:</strong> Development of new theories, methods, or materials</li>
+                <li><strong>Practical applications:</strong> Demonstrated or potential benefits to humanity</li>
+                <li><strong>Experimental verification:</strong> The work should be reproducible and validated</li>
+                <li><strong>Impact:</strong> Significant influence on the field of chemistry</li>
+            </ul>
+            
+            <h3>Eligible Fields</h3>
+            <p>The Chemistry Prize covers all areas of chemistry, including:</p>
+            <ul class="criteria-list">
+                <li>Organic, inorganic, and physical chemistry</li>
+                <li>Biochemistry and molecular biology</li>
+                <li>Materials science and nanotechnology</li>
+                <li>Theoretical and computational chemistry</li>
+                <li>Environmental and green chemistry</li>
+            </ul>
+            
+            <h3>Nomination Requirements</h3>
+            <p>A complete nomination for the Chemistry Prize should include:</p>
+            <ul class="criteria-list">
+                <li>Detailed description of the chemical discovery or innovation</li>
+                <li>Published papers documenting the work</li>
+                <li>Evidence of impact on the field</li>
+                <li>Independent verification of results</li>
+                <li>Statement of the work's significance</li>
+            </ul>
+            
+            <div class="notable-laureates">
+                <h3>Notable Chemistry Laureates</h3>
+                <p>Recent winners include:</p>
+                <ul class="criteria-list">
+                    <li><strong>2022:</strong> Carolyn R. Bertozzi, Morten Meldal, and K. Barry Sharpless for click chemistry</li>
+                    <li><strong>2021:</strong> Benjamin List and David W.C. MacMillan for asymmetric organocatalysis</li>
+                    <li><strong>2020:</strong> Emmanuelle Charpentier and Jennifer A. Doudna for CRISPR-Cas9 gene editing</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Medicine Description -->
+        <section id="medicine-description" class="category-description">
+            <div class="description-header">
+                <div class="description-icon">🏥</div>
+                <div>
+                    <h2>Nobel Prize in Physiology or Medicine</h2>
+                    <p>Recognizing discoveries that have revolutionized our understanding of life and improved human health.</p>
+                </div>
+            </div>
+            
+            <h3>Nomination Criteria</h3>
+            <p>The Nobel Prize in Physiology or Medicine is awarded for discoveries that:</p>
+            <ul class="criteria-list">
+                <li><strong>Fundamental importance:</strong> Transform our understanding of biological processes</li>
+                <li><strong>Medical impact:</strong> Lead to significant improvements in human health</li>
+                <li><strong>Scientific rigor:</strong> Based on sound experimental evidence</li>
+                <li><strong>Originality:</strong> Represent a conceptual or technical breakthrough</li>
+                <li><strong>Verification:</strong> Independently confirmed by the scientific community</li>
+            </ul>
+            
+            <h3>Eligible Fields</h3>
+            <p>The Medicine Prize encompasses:</p>
+            <ul class="criteria-list">
+                <li>Molecular biology and genetics</li>
+                <li>Cell biology and physiology</li>
+                <li>Neuroscience and brain research</li>
+                <li>Immunology and vaccine development</li>
+                <li>Disease mechanisms and treatments</li>
+            </ul>
+            
+            <h3>Nomination Requirements</h3>
+            <p>A complete nomination for the Medicine Prize should include:</p>
+            <ul class="criteria-list">
+                <li>Detailed description of the discovery</li>
+                <li>Published research papers documenting the work</li>
+                <li>Evidence of impact on medicine or biology</li>
+                <li>Clinical applications if applicable</li>
+                <li>Letters of support from experts in the field</li>
+            </ul>
+            
+            <div class="notable-laureates">
+                <h3>Notable Medicine Laureates</h3>
+                <p>Recent winners include:</p>
+                <ul class="criteria-list">
+                    <li><strong>2022:</strong> Svante Pääbo for discoveries concerning human evolution</li>
+                    <li><strong>2021:</strong> David Julius and Ardem Patapoutian for temperature and touch receptors</li>
+                    <li><strong>2020:</strong> Harvey J. Alter, Michael Houghton, and Charles M. Rice for hepatitis C virus discovery</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Literature Description -->
+        <section id="literature-description" class="category-description">
+            <div class="description-header">
+                <div class="description-icon">📚</div>
+                <div>
+                    <h2>Nobel Prize in Literature</h2>
+                    <p>Awarded to authors who have produced outstanding literary work of idealistic tendency.</p>
+                </div>
+            </div>
+            
+            <h3>Nomination Criteria</h3>
+            <p>The Nobel Prize in Literature is awarded to writers who:</p>
+            <ul class="criteria-list">
+                <li><strong>Literary excellence:</strong> Demonstrate exceptional artistic merit</li>
+                <li><strong>Idealistic tendency:</strong> Promote humanistic values</li>
+                <li><strong>Originality:</strong> Offer unique perspectives or styles</li>
+                <li><strong>Impact:</strong> Influence literature and culture</li>
+                <li><strong>Body of work:</strong> Typically awarded for lifetime achievement</li>
+            </ul>
+            
+            <h3>Eligible Genres</h3>
+            <p>The Literature Prize recognizes work in all literary forms:</p>
+            <ul class="criteria-list">
+                <li>Fiction (novels, short stories)</li>
+                <li>Poetry and drama</li>
+                <li>Non-fiction with literary merit</li>
+                <li>Philosophical and historical works</li>
+                <li>Works in all languages</li>
+            </ul>
+            
+            <h3>Nomination Requirements</h3>
+            <p>A complete nomination for the Literature Prize should include:</p>
+            <ul class="criteria-list">
+                <li>Detailed analysis of the author's work</li>
+                <li>Published works (originals or translations)</li>
+                <li>Critical reviews and scholarly analysis</li>
+                <li>Evidence of international recognition</li>
+                <li>Statement of the work's significance</li>
+            </ul>
+            
+            <div class="notable-laureates">
+                <h3>Notable Literature Laureates</h3>
+                <p>Recent winners include:</p>
+                <ul class="criteria-list">
+                    <li><strong>2022:</strong> Annie Ernaux for her courageous exploration of memory</li>
+                    <li><strong>2021:</strong> Abdulrazak Gurnah for his uncompromising portrayal of colonialism</li>
+                    <li><strong>2020:</strong> Louise Glück for her unmistakable poetic voice</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Peace Description -->
+        <section id="peace-description" class="category-description">
+            <div class="description-header">
+                <div class="description-icon">🕊️</div>
+                <div>
+                    <h2>Nobel Peace Prize</h2>
+                    <p>Awarded to those who have done the most or best work for fraternity between nations, disarmament, and peace congresses.</p>
+                </div>
+            </div>
+            
+            <h3>Nomination Criteria</h3>
+            <p>The Nobel Peace Prize recognizes:</p>
+            <ul class="criteria-list">
+                <li><strong>Peace efforts:</strong> Work to prevent conflict or resolve disputes</li>
+                <li><strong>Human rights:</strong> Advancement of civil liberties and justice</li>
+                <li><strong>Disarmament:</strong> Reduction of military threats</li>
+                <li><strong>Humanitarian work:</strong> Assistance to vulnerable populations</li>
+                <li><strong>Impact:</strong> Demonstrated results of peacebuilding efforts</li>
+            </ul>
+            
+            <h3>Eligible Candidates</h3>
+            <p>The Peace Prize may be awarded to:</p>
+            <ul class="criteria-list">
+                <li>Individuals or organizations</li>
+                <li>Activists and human rights defenders</li>
+                <li>Diplomats and political leaders</li>
+                <li>Humanitarian workers</li>
+                <li>Journalists and whistleblowers</li>
+            </ul>
+            
+            <h3>Nomination Requirements</h3>
+            <p>A complete nomination for the Peace Prize should include:</p>
+            <ul class="criteria-list">
+                <li>Detailed description of peace work</li>
+                <li>Documentation of achievements</li>
+                <li>Evidence of impact</li>
+                <li>Supporting materials (reports, articles)</li>
+                <li>Letters of recommendation</li>
+            </ul>
+            
+            <div class="notable-laureates">
+                <h3>Notable Peace Laureates</h3>
+                <p>Recent winners include:</p>
+                <ul class="criteria-list">
+                    <li><strong>2022:</strong> Ales Bialiatski, Memorial, and Center for Civil Liberties for human rights work</li>
+                    <li><strong>2021:</strong> Maria Ressa and Dmitry Muratov for safeguarding freedom of expression</li>
+                    <li><strong>2020:</strong> World Food Programme for combating hunger</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Economics Description -->
+        <section id="economics-description" class="category-description">
+            <div class="description-header">
+                <div class="description-icon">💹</div>
+                <div>
+                    <h2>Nobel Memorial Prize in Economic Sciences</h2>
+                    <p>Awarded for outstanding contributions to the science of economics.</p>
+                </div>
+            </div>
+            
+            <h3>Nomination Criteria</h3>
+            <p>The Economics Prize recognizes work that:</p>
+            <ul class="criteria-list">
+                <li><strong>Theoretical innovation:</strong> Advances economic theory</li>
+                <li><strong>Empirical research:</strong> Provides new insights through data analysis</li>
+                <li><strong>Methodological contribution:</strong> Develops new analytical tools</li>
+                <li><strong>Policy impact:</strong> Influences economic policy</li>
+                <li><strong>Scientific rigor:</strong> Meets high academic standards</li>
+            </ul>
+            
+            <h3>Eligible Fields</h3>
+            <p>The Economics Prize covers all areas of economics:</p>
+            <ul class="criteria-list">
+                <li>Macroeconomics and monetary theory</li>
+                <li>Microeconomics and game theory</li>
+                <li>Econometrics and statistical methods</li>
+                <li>Behavioral and experimental economics</li>
+                <li>Development and international economics</li>
+            </ul>
+            
+            <h3>Nomination Requirements</h3>
+            <p>A complete nomination for the Economics Prize should include:</p>
+            <ul class="criteria-list">
+                <li>Detailed description of the economic contribution</li>
+                <li>Published research papers</li>
+                <li>Evidence of impact on the field</li>
+                <li>Independent verification of results</li>
+                <li>Letters of support from experts</li>
+            </ul>
+            
+            <div class="notable-laureates">
+                <h3>Notable Economics Laureates</h3>
+                <p>Recent winners include:</p>
+                <ul class="criteria-list">
+                    <li><strong>2022:</strong> Ben S. Bernanke, Douglas W. Diamond, and Philip H. Dybvig for research on banks and financial crises</li>
+                    <li><strong>2021:</strong> David Card, Joshua D. Angrist, and Guido W. Imbens for empirical contributions to labor economics</li>
+                    <li><strong>2020:</strong> Paul R. Milgrom and Robert B. Wilson for improvements to auction theory</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" alt="AllAbtNobel Logo">
+                    <span>AllAbtNobel</span>
+                </div>
+                <p>Your comprehensive resource exploring the history, laureates, and impact of the world's most prestigious awards.</p>
+                <div class="social-links">
+                    <a target="_blank" href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="alfred.html">The Founder</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="history.html">History</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="nps1.html">How & When Nobel Prize Started</a></li>
+                    <li><a href="Winners.html">Winners</a></li>
+                    <li><a href="nominees.html">Nominiees</a></li>
+                    <li><a href="fields.html">Fields</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="news and events.html">News and Events</a></li>
+                    <li><a href="Sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                © 2023 AllAbtNobel. Not affiliated with the Nobel Foundation. All content used under fair use for educational purposes.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        // Mobile Menu Functionality
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        const overlay = document.querySelector('.overlay');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+            overlay.classList.toggle('active');
+            
+            // Toggle body scroll when menu is open
+            if (nav.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+        
+        overlay.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            nav.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Function to show description when category is clicked
+        function showDescription(category) {
+            // Hide all descriptions first
+            document.querySelectorAll('.category-description').forEach(desc => {
+                desc.style.display = 'none';
+            });
+            
+            // Show the selected description
+            const selectedDesc = document.getElementById(`${category}-description`);
+            if (selectedDesc) {
+                selectedDesc.style.display = 'block';
+                selectedDesc.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Show physics description by default
+        window.onload = function() {
+            showDescription('physics');
+        };
+    </script>
+</body>
+</html>

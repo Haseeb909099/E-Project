@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="icon" href="./images/nobelfavicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/gallery.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo"> 
+                <a href="index.html"> 
+                    <img src="./images/logo.png" id="logo"> 
+                </a> 
+                <p id="abn">AllAbtNobel</p> 
+            </div>
+            
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="dropdown">
+                        <a href="winners.html">Laureates</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="winners.html">Winners</a></li>
+                            <li><a href="nominees.html">Nominees</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="news and events.html">News & Events</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="login-btn"><a href="login.html">Login</a></li>
+            </nav>
+            <div class="overlay"></div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1 id="intro">GALLERY</h1>
+    </div>
+<br>
+    <div class="hero2" data-scroll>
+        <h1 id="intro2">Laureates Gallery</h1>
+    </div>
+
+    <br>
+
+    <section class="base-template" data-scroll>
+        <div class="base-template__content">
+            <div class="gallery-slider">
+                <div class="gallery-slider__slider">
+                    <div class="gallery-slider__wrapper">
+                        <div class="gallery-slider__slide">
+                            <div class="gallery-slider__image">
+                                <img class="gallery-slider__img-prev" src="./images/Gabriel García Márquez.jpg" alt="Gallery Slide - 1" id="slide1">
+                                <img class="gallery-slider__img-next" src="./images/Gabriel García Márquez.jpg" alt="Gallery Slide - 1 Active">
+                            </div>
+                        </div>
+                        <div class="gallery-slider__slide">
+                            <div class="gallery-slider__image">
+                                <img class="gallery-slider__img-prev" src="./images/Abiy Ahmed.jpg" alt= Gallery Slide - 2">
+                                <img class="gallery-slider__img-next" src="./images/Abiy Ahmed.jpg" alt="Gallery Slide - 2 Active">
+                            </div>
+                        </div>
+                        <div class="gallery-slider__slide">
+                            <div class="gallery-slider__image">
+                                <img class="gallery-slider__img-prev" src="./images/AWARD PRIZE HAN KANG.jpg" alt="Gallery Slide - 3">
+                                <img class="gallery-slider__img-next" src="./images/AWARD PRIZE HAN KANG.jpg" alt="Gallery Slide - 3 Active">
+                            </div>
+                        </div>
+                        <div class="gallery-slider__slide">
+                            <div class="gallery-slider__image">
+                                <img class="gallery-slider__img-prev" src="./images/Bob Dylan.jpg" alt="Gallery Slide - 4">
+                                <img class="gallery-slider__img-next" src="./images/Bob Dylan.jpg" alt="Gallery Slide - 4 Active">
+                            </div>
+                        </div>
+                        <div class="gallery-slider__slide active">
+                            <div class="gallery-slider__image">
+                                <img class="gallery-slider__img-prev" src="./images/DAN SCHEM NOBEL PRIZE.jpg" alt="Gallery Slide - 5">
+                                <img class="gallery-slider__img-next" src="./images/DAN SCHEM NOBEL PRIZE.jpg" alt="Gallery Slide - 5 Active">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+        <div class="trivia-slider" data-scroll>
+        <div class="trivia-container">
+            <div class="trivia-wrapper">
+                <div class="trivia-slide active">
+                    <h1>Did You Know?</h1>
+                    <h2>The Nobel Prize is awarded annually on December 10, the anniversary of Alfred Nobel's death.</h2>
+                </div>
+                <div class="trivia-slide">
+                    <h1>Did You Know?</h1>
+                    <h2>The Nobel Prize medals are made of 18-carat green gold plated with 24-carat gold.</h2>
+                </div>
+                <div class="trivia-slide">
+                    <h1>Did You Know?</h1>
+                    <h2>The Nobel Prize in Economics was not part of Alfred Nobel's will but was established later by the Bank of Sweden.</h2>
+                </div>
+            </div>
+            <div class="trivia-nav">
+                <button class="trivia-prev">Previous</button>
+                <button class="trivia-next">Next</button>
+            </div>
+        </div>
+        </div>
+
+    <br>
+
+    <div class="hero2" data-scroll>
+        <h1 id="intro2">Reference Videos</h1>
+    </div>
+<br>
+    <div class="container-fluid" data-scroll>
+
+        <div class="row gallery" id="gallery">
+
+            <input type="checkbox" id="img1-full" class="full-toggle" hidden>
+            <div class="imgWrap imgWrap1" id="gordon">
+                <div class="vid-container1">
+                    <video src="images/Gallery/Alfred Nobel Biography in English.mp4" autoplay muted loop id="vid1"></video>
+                </div>
+                <label for="img1-full" class="img-label"></label>
+                <div class="caption">
+                    <h3 >Alfred Nobel Biography</h3>
+                    <span></span>
+                </div>
+            </div>
+
+            <input type="checkbox" id="img2-full" class="full-toggle" hidden>
+            <div class="imgWrap imgWrap2">
+                <div class="vid-container2">
+                    <video src="images/Gallery/History Of Nobel Prize _ Alfred Nobel _ The OpenBook.mp4" autoplay muted loop id="vid2"></video>
+                </div>           
+                <label for="img2-full" class="img-label"></label>
+                <div class="caption">
+                    <h3>History Of Nobel Prize</h3>
+                </div>
+            </div>
+
+            <input type="checkbox" id="img3-full" class="full-toggle" hidden>
+            <div class="imgWrap imgWrap3">
+                <div class="vid-container3">
+                    <video src="images/Gallery/Madam Curie s speech in 1911 while winning second Nobel prize _ Madam Curie and Marie Curie.mp4" autoplay muted loop id="vid3"></video>
+                </div>
+                <label for="img3-full" class="img-label"></label>
+                <div class="caption">
+                    <h3>Marie Curie</h3>
+                    <span>Speech In 1911 While Winning Second Nobel Prize</span>
+                </div>
+            </div>
+
+
+            <input type="checkbox" id="img4-full" class="full-toggle" hidden>
+            <div class="imgWrap imgWrap4">
+                <div class="vid-container4">
+                    <video src="images/Gallery/5 things you should know about the Nobel Prize and Alfred Nobel.mp4" autoplay muted loop id="vid4"></video>
+                </div>
+                
+                <label for="img4-full" class="img-label"></label>
+                <div class="caption">
+                    <h3>5 Things You Should Know About The Nobel Prize</h3>
+                </div>
+            </div>
+
+
+            <input type="checkbox" id="img5-full" class="full-toggle" hidden>
+            <div class="imgWrap imgWrap5">
+                <div class="vid-container5">
+                    <video src="images/Gallery/What Is the Nobel Prize  _ National Geographic.mp4" autoplay muted loop id="vid5"></video>
+                </div>
+                
+                <label for="img5-full" class="img-label"></label>
+                <div class="caption">
+                    <h3>What's Nobel Prize</h3>
+                </div>
+            </div>
+
+            <label for="img1-full" class="close" title="Close"><i class="bi bi-x-lg"></i></label>
+            <label for="img2-full" class="close" title="Close"><i class="bi bi-x-lg"></i></label>
+            <label for="img3-full" class="close" title="Close"><i class="bi bi-x-lg"></i></label>
+            <label for="img4-full" class="close" title="Close"><i class="bi bi-x-lg"></i></label>
+            <label for="img5-full" class="close" title="Close"><i class="bi bi-x-lg"></i></label>
+        </div>
+    </div>
+    <br>
+    <!--New Trivia-->
+        <div class="trivia-slider" data-scroll>
+        <div class="trivia-container">
+            <div class="trivia-wrapper">
+                <div class="trivia-slide active">
+                    <h1>Did You Know?</h1>
+                    <h2>The Nobel Prize is awarded annually on December 10, the anniversary of Alfred Nobel's death.</h2>
+                </div>
+                <div class="trivia-slide">
+                    <h1>Did You Know?</h1>
+                    <h2>The Nobel Prize medals are made of 18-carat green gold plated with 24-carat gold.</h2>
+                </div>
+                <div class="trivia-slide">
+                    <h1>Did You Know?</h1>
+                    <h2>The Nobel Prize in Economics was not part of Alfred Nobel's will but was established later by the Bank of Sweden.</h2>
+                </div>
+            </div>
+            <div class="trivia-nav">
+                <button class="trivia-prev">Previous</button>
+                <button class="trivia-next">Next</button>
+            </div>
+        </div>
+        </div>
+        <br>
+    <!--Old Trivia-->
+    <!-- <div class="trivia-slider" data-scroll>
+        <div class="trivia-wrapper">
+            <div class="trivia-slide active">
+                <h1>Did You Know?</h1>
+                <h2>The Nobel Prize is awarded annually on December 10, the anniversary of Alfred Nobel's death.</h2>
+            </div>
+            <div class="trivia-slide">
+                <h1>Did You Know?</h1>
+                <h2>The Nobel Prize medals are made of 18-carat green gold plated with 24-carat gold.</h2>
+            </div>
+            <div class="trivia-slide">
+                <h1>Did You Know?</h1>
+                <h2>The Nobel Prize in Economics was not part of Alfred Nobel's will but was established later by the Bank of Sweden.</h2>
+            </div>
+        </div>
+        <button class="trivia-prev">Previous</button>
+        <button class="trivia-next">Next</button>
+    </div>
+     -->
+
+    <div class="hero2" data-scroll>
+        <h1 id="intro2">Youngest Nobel Laureates</h1>
+    </div>
+
+    <br>
+
+    <section class="base-template" data-scroll>
+        <div class="base-template__content">
+            <div class="gallery-slider">
+                <div class="gallery-slider__slider">
+                    <div class="gallery-slider__wrapper">
+                        <div class="gallery-slider__slide active">
+                            <div class="gallery-slider__image">
+                                <img class="gallery-slider__img-prev" src="./images/YL1.webp" alt="Gallery Slide - 1">
+                                <img class="gallery-slider__img-next" src="./images/YL1.webp" alt="Gallery Slide - 1 Active">    
+                            </div>
+                            <label for="img3-full" class="img-label"></label>
+                            <div class="caption">
+                            <h3>@herbert-de-vrijer</h3>
+                            <span>FEB 24, 2025 / visualelectric.com</span>
+                            </div>
+                        </div>
+                        <div class="gallery-slider__slide">
+                            <div class="gallery-slider__image">
+                                <img class="gallery-slider__img-prev" src="./images/George_Whipple_nobel.jpg" alt="Gallery Slide - 2">
+                                <img class="gallery-slider__img-next" src="./images/George_Whipple_nobel.jpg" alt="Gallery Slide - 2 Active">
+                            </div>
+                            <label for="img3-full" class="img-label"></label>
+                            <div class="caption">
+                            <h3>@herbert-de-vrijer</h3>
+                            <span>FEB 24, 2025 / visualelectric.com</span>
+                            </div>
+                        </div>
+                        <div class="gallery-slider__slide">
+                            <div class="gallery-slider__image">
+                                <img class="gallery-slider__img-prev" src="./images/MALALA YOUSUFZAI.jpeg" alt="Gallery Slide - 3">
+                                <img class="gallery-slider__img-next" src="./images/MALALA YOUSUFZAI.jpeg" alt="Gallery Slide - 3 Active">
+                            </div>
+                        </div>
+                        <div class="gallery-slider__slide">
+                            <div class="gallery-slider__image">
+                                <img class="gallery-slider__img-prev" src="./images/richard.png" alt="Gallery Slide - 4">
+                                <img class="gallery-slider__img-next" src="./images/richard.png" alt="Gallery Slide - 4 Active">
+                            </div>
+                        </div>
+                        <div class="gallery-slider__slide">
+                            <div class="gallery-slider__image">
+                                <img class="gallery-slider__img-prev" src="./images/powell_cecil_a1.jpg" alt="Gallery Slide - 5">
+                                <img class="gallery-slider__img-next" src="./images/powell_cecil_a1.jpg" alt="Gallery Slide - 5 Active">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!--New Trivia-->
+            <div class="trivia-slider" data-scroll>
+        <div class="trivia-container">
+            <div class="trivia-wrapper">
+                <div class="trivia-slide active">
+                     <h1>Did You Know?</h1>
+                <h2>Malala Yousafzai is the youngest Nobel Prize laureate, winning the Peace Prize at age 17.</h2>
+                </div>
+                <div class="trivia-slide">
+                    <h1>Did You Know?</h1>
+                <h2>The youngest Nobel laureate in Physics was Lawrence Bragg, who won at age 25.</h2>
+                </div>
+                <div class="trivia-slide">
+                    <h1>Did You Know?</h1>
+                <h2>The Nobel Prize has been awarded to laureates as young as 17 and as old as 97.</h2>
+                </div>
+            </div>
+            <div class="trivia-nav">
+                <button class="trivia-prev">Previous</button>
+                <button class="trivia-next">Next</button>
+            </div>
+        </div>
+        </div>
+        <br>
+<!--old Trivia-->
+    <!-- <div class="trivia-slider" data-scroll>
+        <div class="trivia-wrapper">
+            <div class="trivia-slide active">
+                <h1>Did You Know?</h1>
+                <h2>Malala Yousafzai is the youngest Nobel Prize laureate, winning the Peace Prize at age 17.</h2>
+            </div>
+            <div class="trivia-slide">
+                <h1>Did You Know?</h1>
+                <h2>The youngest Nobel laureate in Physics was Lawrence Bragg, who won at age 25.</h2>
+            </div>
+            <div class="trivia-slide">
+                <h1>Did You Know?</h1>
+                <h2>The Nobel Prize has been awarded to laureates as young as 17 and as old as 97.</h2>
+            </div> -->
+        <!-- </div>
+        <button class="trivia-prev">Previous</button>
+        <button class="trivia-next">Next</button> -->
+    <!-- </div> -->
+
+    <div class="hero2" data-scroll>
+        <h1 id="intro2">Physics Nobel Laureattes</h1>
+    </div>
+<br>
+    <div class="container-fluid" data-scroll>
+        <div class="row gallery" id="gallery">
+            <input type="checkbox" id="img1-full" class="full-toggle" hidden>
+            <div class="imgWrap imgWrap1" style="background-image: url(./images/Albert.jpg);">
+                <label for="img1-full" class="img-label"></label>
+                <div class="caption">
+                    <h3>Albert Einstein</h3>
+                    <span>Awarded the Nobel Prize in Physics in 1921 for his explanation of the photoelectric effect.
+                        Born In March 14, 1879, in Ulm, Germany</span>
+                </div>
+            </div>
+            <input type="checkbox" id="img2-full" class="full-toggle" hidden>
+            <div class="imgWrap imgWrap2" style="background-image: url(./images/marie\ curie3.jpg);">
+                <label for="img2-full" class="img-label"></label>
+                <div class="caption">
+                    <h3>Marie Curie</h3>
+                    <span> Received An Nobel Prize In  Physics (1903) and Nobel Prize in Chemistry (1911), becoming the first woman to win a Nobel Prize and the first person to win two Nobel Prizes in different fields.
+                    </span>
+                </div>
+            </div>
+            <input type="checkbox" id="img3-full" class="full-toggle" hidden>
+            <div class="imgWrap imgWrap3" style="background-image: url(./images/richard.png);">
+                <label for="img3-full" class="img-label"></label>
+                <div class="caption">
+                    <h3>Richard Feynman</h3>
+                    <span>Received  Nobel Prize in Physics in 1965 for his work on QED.</span>
+                </div>
+            </div>
+            <input type="checkbox" id="img4-full" class="full-toggle" hidden>
+            <div class="imgWrap imgWrap4" style="background-image: url(./images/Niels\ Bohr.jpg);">
+                <label for="img4-full" class="img-label"></label>
+                <div class="caption">
+                    <h3>Neil's Bohr</h3>
+                    <span>Received Nobel Prize Award in Physics in 1922 for his work on atomic structure.</span>
+                </div>
+            </div>
+            <input type="checkbox" id="img5-full" class="full-toggle" hidden>
+            <div class="imgWrap imgWrap5" style="background-image: url(./images/Wilhelm-Conrad-Rontgen.webp);">
+                <label for="img5-full" class="img-label"></label>
+                <div class="caption">
+                    <h3>Wilhelm-Conrad-Rontgen</h3>
+                    <span>Received An Nobel Prize Award in Physics in 1901 for his discovery of X-rays.</span>
+                </div>
+            </div>
+            <label for="img1-full" class="close" title="Close"><i class="bi bi-x-lg"></i></label>
+            <label for="img2-full" class="close" title="Close"><i class="bi bi-x-lg"></i></label>
+            <label for="img3-full" class="close" title="Close"><i class="bi bi-x-lg"></i></label>
+            <label for="img4-full" class="close" title="Close"><i class="bi bi-x-lg"></i></label>
+            <label for="img5-full" class="close" title="Close"><i class="bi bi-x-lg"></i></label>
+        </div>
+    </div>
+
+    <br>
+    <!--New Trivia-->
+ <div class="trivia-slider" data-scroll>
+        <div class="trivia-container">
+            <div class="trivia-wrapper">
+                <div class="trivia-slide active">
+                    <h1>Did You Know?</h1>
+                    <h2>The Nobel Prize is awarded annually on December 10, the anniversary of Alfred Nobel's death.</h2>
+                </div>
+                <div class="trivia-slide">
+                    <h1>Did You Know?</h1>
+                    <h2>The Nobel Prize medals are made of 18-carat green gold plated with 24-carat gold.</h2>
+                </div>
+                <div class="trivia-slide">
+                    <h1>Did You Know?</h1>
+                    <h2>The Nobel Prize in Economics was not part of Alfred Nobel's will but was established later by the Bank of Sweden.</h2>
+                </div>
+            </div>
+            <div class="trivia-nav">
+                <button class="trivia-prev">Previous</button>
+                <button class="trivia-next">Next</button>
+            </div>
+        </div>
+        </div>
+        <br>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" alt="AllAbtNobel Logo">
+                    <span>AllAbtNobel</span>
+                </div>
+                <p>Your comprehensive resource exploring the history, laureates, and impact of the world's most prestigious awards.</p>
+                <div class="social-links">
+                    <a target="_blank" href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="alfred.html">The Founder</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="history.html">History</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="nps1.html">How & When Nobel Prize Started</a></li>
+                    <li><a href="Winners.html">Winners</a></li>
+                    <li><a href="nominees.html">Nominiees</a></li>
+                    <li><a href="fields.html">Fields</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="news and events.html">News and Events</a></li>
+                    <li><a href="Sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                © 2023 AllAbtNobel. Not affiliated with the Nobel Foundation. All content used under fair use for educational purposes.
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </footer>
+
+    <script src="JS/gallery.js"></script>
+</body>
+</html>
